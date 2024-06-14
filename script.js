@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   function isOperator(value) {
-    return ['+', '-', '*', '/', '%'].includes(value);
+    return ['+', '-', '*', '/', '%','.'].includes(value);
   }
 });
