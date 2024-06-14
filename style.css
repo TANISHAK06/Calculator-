@@ -1,0 +1,82 @@
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --background-color: #0a0a0a;
+  --text-color: white;
+  --button-bg-color: transparent;
+  --button-text-color: white;
+  --button-special-color: rgb(4, 218, 4);
+  --button-equal-color: rgb(255, 157, 0);
+}
+
+body.light-mode {
+  --background-color:  #eaf6f6;
+  --text-color: black;
+  --button-bg-color: white;
+  --button-text-color: black;
+  --button-special-color: rgb(0, 150, 0);
+  --button-equal-color: rgb(255, 100, 0);
+}
+
+#display {
+  width: 370px;
+  height: 540px;
+  border: 1px solid rgb(213, 209, 209);
+  border-radius: 4px;
+  text-align: center;
+  margin: 55px auto;
+}
+
+#show {
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--text-color);
+  margin: 22px;
+  margin-top: 25px;
+  text-align: right;
+  font-size: 40px;
+}
+
+::placeholder {
+  color: var(--text-color);
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  margin: 10px;
+  box-shadow: -4px -4px 10px rgba(201, 201, 201, 0.363);
+}
+
+.btn[id="sym"] {
+  color: var(--button-special-color);
+}
+
+.btn[id="equal"] {
+  background-color: var(--button-equal-color);
+}
+
+.theme-switch {
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--text-color);
+}
